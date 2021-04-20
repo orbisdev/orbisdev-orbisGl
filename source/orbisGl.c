@@ -392,11 +392,11 @@ int orbisGlCreateConf(unsigned int width,unsigned int height)
 			orbisGlConf->pgl_config.size=sizeof(orbisGlConf->pgl_config);
 			orbisGlConf->pgl_config.flags=SCE_PGL_FLAGS_USE_COMPOSITE_EXT | SCE_PGL_FLAGS_USE_FLEXIBLE_MEMORY | 0x60;
 			orbisGlConf->pgl_config.processOrder=1;
-			orbisGlConf->pgl_config.systemSharedMemorySize=0x200000;
-			orbisGlConf->pgl_config.videoSharedMemorySize=0x2400000;
-			orbisGlConf->pgl_config.maxMappedFlexibleMemory=0xAA00000;
-			orbisGlConf->pgl_config.drawCommandBufferSize=0xC0000;
-			orbisGlConf->pgl_config.lcueResourceBufferSize=0x10000;
+			orbisGlConf->pgl_config.systemSharedMemorySize=0x4000000;
+			orbisGlConf->pgl_config.videoSharedMemorySize=0x4000000;
+			orbisGlConf->pgl_config.maxMappedFlexibleMemory=0xFFFFFFFF;
+			orbisGlConf->pgl_config.drawCommandBufferSize=0x400000;
+			orbisGlConf->pgl_config.lcueResourceBufferSize=0x2000000;
 			orbisGlConf->pgl_config.dbgPosCmd_0x40=ATTR_ORBISGL_WIDTH;
 			orbisGlConf->pgl_config.dbgPosCmd_0x44=ATTR_ORBISGL_HEIGHT;
 			orbisGlConf->pgl_config.dbgPosCmd_0x48=0;
