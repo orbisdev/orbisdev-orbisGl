@@ -17,7 +17,7 @@ $(OutPath)/$(TargetFile).a: $(ObjectFiles)
 	$(archive)
 
 install:
-	@cp $(OutPath)/$(TargetFile).a $(ORBISDEV)/usr/lib
-	@cp include/orbisGl.h $(ORBISDEV)/usr/include/orbis
+	@cp $(OutPath)/$(TargetFile).a $(DESTDIR)$(ORBISDEV)/usr/lib
+	@cp include/orbisGl.h $(DESTDIR)$(ORBISDEV)/usr/include/orbis
 	@echo "$(TargetFile) Installed!"
 
